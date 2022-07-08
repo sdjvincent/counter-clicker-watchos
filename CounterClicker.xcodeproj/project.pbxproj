@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B3335CD2878148C00706906 /* CounterClicker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8B3335CC2878148C00706906 /* CounterClicker WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B3335D32878148C00706906 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3335D12878148C00706906 /* Interface.storyboard */; };
+		8B3335D52878148D00706906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3335D42878148D00706906 /* Assets.xcassets */; };
+		8B3335DB2878148D00706906 /* CounterClicker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B3335DA2878148D00706906 /* CounterClicker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B3335E02878148D00706906 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3335DF2878148D00706906 /* InterfaceController.swift */; };
+		8B3335E22878148D00706906 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3335E12878148D00706906 /* ExtensionDelegate.swift */; };
+		8B3335E42878148D00706906 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3335E32878148D00706906 /* NotificationController.swift */; };
+		8B3335E62878148D00706906 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3335E52878148D00706906 /* ComplicationController.swift */; };
+		8B3335E82878148D00706906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3335E72878148D00706906 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B3335CE2878148C00706906 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B3335C22878148C00706906 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B3335CB2878148C00706906;
+			remoteInfo = "CounterClicker WatchKit App";
+		};
+		8B3335DC2878148D00706906 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B3335C22878148C00706906 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B3335D92878148D00706906;
+			remoteInfo = "CounterClicker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B3335F02878148D00706906 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8B3335DB2878148D00706906 /* CounterClicker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3335F42878148D00706906 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8B3335CD2878148C00706906 /* CounterClicker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B3335C82878148C00706906 /* CounterClicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterClicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3335CC2878148C00706906 /* CounterClicker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CounterClicker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3335D22878148C00706906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8B3335D42878148D00706906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B3335DA2878148D00706906 /* CounterClicker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CounterClicker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3335DF2878148D00706906 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8B3335E12878148D00706906 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8B3335E32878148D00706906 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8B3335E52878148D00706906 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		8B3335E72878148D00706906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B3335E92878148D00706906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B3335EA2878148D00706906 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B3335D72878148D00706906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B3335C12878148C00706906 = {
+			isa = PBXGroup;
+			children = (
+				8B3335D02878148C00706906 /* CounterClicker WatchKit App */,
+				8B3335DE2878148D00706906 /* CounterClicker WatchKit Extension */,
+				8B3335C92878148C00706906 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B3335C92878148C00706906 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B3335C82878148C00706906 /* CounterClicker.app */,
+				8B3335CC2878148C00706906 /* CounterClicker WatchKit App.app */,
+				8B3335DA2878148D00706906 /* CounterClicker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B3335D02878148C00706906 /* CounterClicker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8B3335D12878148C00706906 /* Interface.storyboard */,
+				8B3335D42878148D00706906 /* Assets.xcassets */,
+			);
+			path = "CounterClicker WatchKit App";
+			sourceTree = "<group>";
+		};
+		8B3335DE2878148D00706906 /* CounterClicker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8B3335DF2878148D00706906 /* InterfaceController.swift */,
+				8B3335E12878148D00706906 /* ExtensionDelegate.swift */,
+				8B3335E32878148D00706906 /* NotificationController.swift */,
+				8B3335E52878148D00706906 /* ComplicationController.swift */,
+				8B3335E72878148D00706906 /* Assets.xcassets */,
+				8B3335E92878148D00706906 /* Info.plist */,
+				8B3335EA2878148D00706906 /* PushNotificationPayload.apns */,
+			);
+			path = "CounterClicker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B3335C72878148C00706906 /* CounterClicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3335F52878148D00706906 /* Build configuration list for PBXNativeTarget "CounterClicker" */;
+			buildPhases = (
+				8B3335C62878148C00706906 /* Resources */,
+				8B3335F42878148D00706906 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B3335CF2878148C00706906 /* PBXTargetDependency */,
+			);
+			name = CounterClicker;
+			productName = CounterClicker;
+			productReference = 8B3335C82878148C00706906 /* CounterClicker.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		8B3335CB2878148C00706906 /* CounterClicker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3335F12878148D00706906 /* Build configuration list for PBXNativeTarget "CounterClicker WatchKit App" */;
+			buildPhases = (
+				8B3335CA2878148C00706906 /* Resources */,
+				8B3335F02878148D00706906 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B3335DD2878148D00706906 /* PBXTargetDependency */,
+			);
+			name = "CounterClicker WatchKit App";
+			productName = "CounterClicker WatchKit App";
+			productReference = 8B3335CC2878148C00706906 /* CounterClicker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8B3335D92878148D00706906 /* CounterClicker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B3335ED2878148D00706906 /* Build configuration list for PBXNativeTarget "CounterClicker WatchKit Extension" */;
+			buildPhases = (
+				8B3335D62878148D00706906 /* Sources */,
+				8B3335D72878148D00706906 /* Frameworks */,
+				8B3335D82878148D00706906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CounterClicker WatchKit Extension";
+			productName = "CounterClicker WatchKit Extension";
+			productReference = 8B3335DA2878148D00706906 /* CounterClicker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B3335C22878148C00706906 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					8B3335C72878148C00706906 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					8B3335CB2878148C00706906 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					8B3335D92878148D00706906 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 8B3335C52878148C00706906 /* Build configuration list for PBXProject "CounterClicker" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B3335C12878148C00706906;
+			productRefGroup = 8B3335C92878148C00706906 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B3335C72878148C00706906 /* CounterClicker */,
+				8B3335CB2878148C00706906 /* CounterClicker WatchKit App */,
+				8B3335D92878148D00706906 /* CounterClicker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B3335C62878148C00706906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3335CA2878148C00706906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3335D52878148D00706906 /* Assets.xcassets in Resources */,
+				8B3335D32878148C00706906 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3335D82878148D00706906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3335E82878148D00706906 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B3335D62878148D00706906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3335E42878148D00706906 /* NotificationController.swift in Sources */,
+				8B3335E62878148D00706906 /* ComplicationController.swift in Sources */,
+				8B3335E22878148D00706906 /* ExtensionDelegate.swift in Sources */,
+				8B3335E02878148D00706906 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B3335CF2878148C00706906 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B3335CB2878148C00706906 /* CounterClicker WatchKit App */;
+			targetProxy = 8B3335CE2878148C00706906 /* PBXContainerItemProxy */;
+		};
+		8B3335DD2878148D00706906 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B3335D92878148D00706906 /* CounterClicker WatchKit Extension */;
+			targetProxy = 8B3335DC2878148D00706906 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B3335D12878148C00706906 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B3335D22878148C00706906 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B3335EB2878148D00706906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B3335EC2878148D00706906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B3335EE2878148D00706906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5PN5V7R5QD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CounterClicker WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CounterClicker WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClicker.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		8B3335EF2878148D00706906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5PN5V7R5QD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CounterClicker WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CounterClicker WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClicker.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		8B3335F22878148D00706906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5PN5V7R5QD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = CounterClicker_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "CounterClicker WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClicker.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		8B3335F32878148D00706906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5PN5V7R5QD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = CounterClicker_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "CounterClicker WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClicker.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		8B3335F62878148D00706906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5PN5V7R5QD;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClicker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8B3335F72878148D00706906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5PN5V7R5QD;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClicker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B3335C52878148C00706906 /* Build configuration list for PBXProject "CounterClicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3335EB2878148D00706906 /* Debug */,
+				8B3335EC2878148D00706906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B3335ED2878148D00706906 /* Build configuration list for PBXNativeTarget "CounterClicker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3335EE2878148D00706906 /* Debug */,
+				8B3335EF2878148D00706906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B3335F12878148D00706906 /* Build configuration list for PBXNativeTarget "CounterClicker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3335F22878148D00706906 /* Debug */,
+				8B3335F32878148D00706906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B3335F52878148D00706906 /* Build configuration list for PBXNativeTarget "CounterClicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B3335F62878148D00706906 /* Debug */,
+				8B3335F72878148D00706906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B3335C22878148C00706906 /* Project object */;
+}
