@@ -17,7 +17,6 @@ class InterfaceController: WKInterfaceController {
     
     var totalClicks: Int = 0
     var clickSound = AVAudioPlayer()
-    var resetClickSound = AVAudioPlayer()
 
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
@@ -32,16 +31,16 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
     }
     
-    @IBAction public func clickerClicked(_ sender : Any) {
+    @IBAction func clickerClicked() {
         totalClicks = totalClicks + 1
         updateUI()
-        playClickTapped()
+        playSound(soundName: "click")
     }
     
     @IBAction func resetPressed() {
         totalClicks = 0
         updateUI()
-        playResetTapped()
+        playSound(soundName: "reset-click")
     }
     
     func updateUI() {
@@ -49,29 +48,16 @@ class InterfaceController: WKInterfaceController {
         self.counterDisplay.setText("\(self.totalClicks)")
     }
     
-    func playClickTapped() {
+    func playSound(soundName : String) {
+        
+        let path = Bundle.main.path(forResource: soundName, ofType: ".mp3")!
+        let url = URL(fileURLWithPath: path)
 
-            let path = Bundle.main.path(forResource: "click", ofType: ".mp3")!
-            let url = URL(fileURLWithPath: path)
-
-            do {
-                clickSound = try AVAudioPlayer(contentsOf: url)
-                clickSound.play()
-            } catch {
-                       //couldn't load file
-                   }
-    }
-    
-    func playResetTapped() {
-
-            let path = Bundle.main.path(forResource: "reset-click", ofType: ".mp3")!
-            let url = URL(fileURLWithPath: path)
-
-            do {
-                clickSound = try AVAudioPlayer(contentsOf: url)
-                clickSound.play()
-            } catch {
-                       //couldn't load file
-                   }
+        do {
+            clickSound = try AVAudioPlayer(contentsOf: url)
+            clickSound.play()
+        } catch {
+                   //couldn't load file
+               }
     }
 }
