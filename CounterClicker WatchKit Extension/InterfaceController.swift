@@ -58,7 +58,7 @@ class InterfaceController: WKInterfaceController {
                 clickSound = try AVAudioPlayer(contentsOf: url)
                 clickSound.play()
             } catch {
-                       //couldn't load file :(
+                       //couldn't load file
                    }
     }
     
@@ -71,7 +71,7 @@ class InterfaceController: WKInterfaceController {
                 clickSound = try AVAudioPlayer(contentsOf: url)
                 clickSound.play()
             } catch {
-                       //couldn't load file :(
+                       //couldn't load file
                    }
     }
 }
