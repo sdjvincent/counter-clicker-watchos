@@ -16,12 +16,12 @@
                                 <action selector="clickerClicked" destination="AgC-eL-Hgc" id="X7d-Mr-sGC"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="center" title="-1" id="VbO-bV-USd">
+                        <button width="1" height="38" alignment="center" title="-1" id="VbO-bV-USd">
                             <connections>
                                 <action selector="ClickerClickedMinus" destination="AgC-eL-Hgc" id="3SG-kx-sG8"/>
                             </connections>
                         </button>
-                        <label width="1" height="112" alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="eaF-6y-aJW">
+                        <label width="1" height="120" alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="eaF-6y-aJW">
                             <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
                         </label>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Reset" id="EZl-Xc-EDf">
@@ -35,7 +35,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="351"/>
+            <point key="canvasLocation" x="220" y="285.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
