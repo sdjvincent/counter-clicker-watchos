@@ -13,8 +13,7 @@ import AVFoundation
 class InterfaceController: WKInterfaceController {
     
     @IBOutlet weak var counterDisplay: WKInterfaceLabel!
-    @IBOutlet weak var clickOne: WKInterfaceButton!
-    
+ 
     var totalClicks: Int = 0
     var clickSound = AVAudioPlayer()
 
