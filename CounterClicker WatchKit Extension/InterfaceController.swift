@@ -37,6 +37,12 @@ class InterfaceController: WKInterfaceController {
         playSound(soundName: "click")
     }
     
+    @IBAction func ClickerClickedMinus() {
+        totalClicks = totalClicks - 1
+        updateUI()
+        playSound(soundName: "click")
+    }
+    
     @IBAction func resetPressed() {
         totalClicks = 0
         updateUI()
