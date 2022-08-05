@@ -7,6 +7,7 @@
 
 import WatchKit
 import Foundation
+import AVFoundation
 
 
 class InterfaceController: WKInterfaceController {
@@ -15,6 +16,8 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var clickOne: WKInterfaceButton!
     
     var totalClicks: Int = 0
+    var clickSound = AVAudioPlayer()
+    var resetClickSound = AVAudioPlayer()
 
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
@@ -32,11 +35,13 @@ class InterfaceController: WKInterfaceController {
     @IBAction public func clickerClicked(_ sender : Any) {
         totalClicks = totalClicks + 1
         updateUI()
+        playClickTapped()
     }
     
     @IBAction func resetPressed() {
         totalClicks = 0
         updateUI()
+        playResetTapped()
     }
     
     func updateUI() {
@@ -44,5 +49,29 @@ class InterfaceController: WKInterfaceController {
         self.counterDisplay.setText("\(self.totalClicks)")
     }
     
+    func playClickTapped() {
 
+            let path = Bundle.main.path(forResource: "click", ofType: ".mp3")!
+            let url = URL(fileURLWithPath: path)
+
+            do {
+                clickSound = try AVAudioPlayer(contentsOf: url)
+                clickSound.play()
+            } catch {
+                       //couldn't load file :(
+                   }
+    }
+    
+    func playResetTapped() {
+
+            let path = Bundle.main.path(forResource: "reset-click", ofType: ".mp3")!
+            let url = URL(fileURLWithPath: path)
+
+            do {
+                clickSound = try AVAudioPlayer(contentsOf: url)
+                clickSound.play()
+            } catch {
+                       //couldn't load file :(
+                   }
+    }
 }

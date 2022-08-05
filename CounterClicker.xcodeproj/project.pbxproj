@@ -16,6 +16,10 @@
 		8B3335E42878148D00706906 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3335E32878148D00706906 /* NotificationController.swift */; };
 		8B3335E62878148D00706906 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3335E52878148D00706906 /* ComplicationController.swift */; };
 		8B3335E82878148D00706906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3335E72878148D00706906 /* Assets.xcassets */; };
+		8BB9F558289CF9A000725970 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9F557289CF9A000725970 /* click.mp3 */; };
+		8BB9F559289CF9A000725970 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9F557289CF9A000725970 /* click.mp3 */; };
+		8BB9F55B289CFB5700725970 /* reset-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9F55A289CFB5700725970 /* reset-click.mp3 */; };
+		8BB9F55C289CFB5700725970 /* reset-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8BB9F55A289CFB5700725970 /* reset-click.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,8 @@
 		8B3335E72878148D00706906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B3335E92878148D00706906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B3335EA2878148D00706906 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8BB9F557289CF9A000725970 /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = click.mp3; path = Assets.xcassets/Sounds/click.mp3; sourceTree = "<group>"; };
+		8BB9F55A289CFB5700725970 /* reset-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "reset-click.mp3"; path = "Assets.xcassets/Sounds/reset-click.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,8 @@
 			children = (
 				8B3335D12878148C00706906 /* Interface.storyboard */,
 				8B3335D42878148D00706906 /* Assets.xcassets */,
+				8BB9F55A289CFB5700725970 /* reset-click.mp3 */,
+				8BB9F557289CF9A000725970 /* click.mp3 */,
 			);
 			path = "CounterClicker WatchKit App";
 			sourceTree = "<group>";
@@ -235,8 +243,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB9F558289CF9A000725970 /* click.mp3 in Resources */,
 				8B3335D52878148D00706906 /* Assets.xcassets in Resources */,
 				8B3335D32878148C00706906 /* Interface.storyboard in Resources */,
+				8BB9F55B289CFB5700725970 /* reset-click.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB9F55C289CFB5700725970 /* reset-click.mp3 in Resources */,
 				8B3335E82878148D00706906 /* Assets.xcassets in Resources */,
+				8BB9F559289CF9A000725970 /* click.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
