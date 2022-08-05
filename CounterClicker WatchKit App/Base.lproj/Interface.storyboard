@@ -11,20 +11,21 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CounterClicker_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="0" id="eaF-6y-aJW"/>
                         <button width="1" height="38" alignment="left" title="+1" id="tTb-8c-gcR">
                             <connections>
-                                <action selector="clickerClicked:" destination="AgC-eL-Hgc" id="AHy-1H-CuY"/>
+                                <action selector="clickerClicked" destination="AgC-eL-Hgc" id="X7d-Mr-sGC"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Reset" id="EZl-Xc-EDf">
+                        <label width="1" height="100" alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="eaF-6y-aJW">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Reset" id="EZl-Xc-EDf">
                             <connections>
                                 <action selector="resetPressed" destination="AgC-eL-Hgc" id="FKt-oR-x64"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
-                        <outlet property="clickOne" destination="tTb-8c-gcR" id="X2H-cs-hNJ"/>
                         <outlet property="counterDisplay" destination="eaF-6y-aJW" id="ygx-5t-TGZ"/>
                     </connections>
                 </controller>
