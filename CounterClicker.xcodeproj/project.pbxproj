@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B3335CD2878148C00706906 /* CounterClicker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8B3335CC2878148C00706906 /* CounterClicker WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8B3335CD2878148C00706906 /* 1 In 1 Out.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8B3335CC2878148C00706906 /* 1 In 1 Out.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8B3335D32878148C00706906 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B3335D12878148C00706906 /* Interface.storyboard */; };
 		8B3335D52878148D00706906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3335D42878148D00706906 /* Assets.xcassets */; };
 		8B3335DB2878148D00706906 /* CounterClicker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8B3335DA2878148D00706906 /* CounterClicker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -57,7 +57,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				8B3335CD2878148C00706906 /* CounterClicker WatchKit App.app in Embed Watch Content */,
+				8B3335CD2878148C00706906 /* 1 In 1 Out.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,8 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8B3335C82878148C00706906 /* CounterClicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterClicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B3335CC2878148C00706906 /* CounterClicker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CounterClicker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3335C82878148C00706906 /* 1 In 1 Out.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "1 In 1 Out.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3335CC2878148C00706906 /* 1 In 1 Out.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "1 In 1 Out.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3335D22878148C00706906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8B3335D42878148D00706906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B3335DA2878148D00706906 /* CounterClicker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CounterClicker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,8 +104,8 @@
 		8B3335C92878148C00706906 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B3335C82878148C00706906 /* CounterClicker.app */,
-				8B3335CC2878148C00706906 /* CounterClicker WatchKit App.app */,
+				8B3335C82878148C00706906 /* 1 In 1 Out.app */,
+				8B3335CC2878148C00706906 /* 1 In 1 Out.app */,
 				8B3335DA2878148D00706906 /* CounterClicker WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -153,7 +153,7 @@
 			);
 			name = CounterClicker;
 			productName = CounterClicker;
-			productReference = 8B3335C82878148C00706906 /* CounterClicker.app */;
+			productReference = 8B3335C82878148C00706906 /* 1 In 1 Out.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		8B3335CB2878148C00706906 /* CounterClicker WatchKit App */ = {
@@ -170,7 +170,7 @@
 			);
 			name = "CounterClicker WatchKit App";
 			productName = "CounterClicker WatchKit App";
-			productReference = 8B3335CC2878148C00706906 /* CounterClicker WatchKit App.app */;
+			productReference = 8B3335CC2878148C00706906 /* 1 In 1 Out.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		8B3335D92878148D00706906 /* CounterClicker WatchKit Extension */ = {
@@ -486,11 +486,10 @@
 				DEVELOPMENT_TEAM = 5PN5V7R5QD;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = CounterClicker_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "CounterClicker WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClicker.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "1 In 1 Out";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -511,11 +510,10 @@
 				DEVELOPMENT_TEAM = 5PN5V7R5QD;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = CounterClicker_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "CounterClicker WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClicker.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "1 In 1 Out";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -533,7 +531,7 @@
 				DEVELOPMENT_TEAM = 5PN5V7R5QD;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClicker";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "1 In 1 Out";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -546,7 +544,7 @@
 				DEVELOPMENT_TEAM = 5PN5V7R5QD;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClicker";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "1 In 1 Out";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
