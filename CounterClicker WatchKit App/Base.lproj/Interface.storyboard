@@ -11,19 +11,19 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CounterClicker_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" height="38" alignment="center" title="+1" id="tTb-8c-gcR">
-                            <connections>
-                                <action selector="clickerClicked" destination="AgC-eL-Hgc" id="X7d-Mr-sGC"/>
-                            </connections>
-                        </button>
                         <button width="1" height="38" alignment="center" title="-1" id="VbO-bV-USd">
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="ClickerClickedMinus" destination="AgC-eL-Hgc" id="3SG-kx-sG8"/>
                             </connections>
                         </button>
-                        <label width="1" height="120" alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="eaF-6y-aJW">
-                            <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
-                        </label>
+                        <button width="1" height="172" alignment="center" title="+1" id="tTb-8c-gcR">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="24"/>
+                            <connections>
+                                <action selector="clickerClicked" destination="AgC-eL-Hgc" id="X7d-Mr-sGC"/>
+                            </connections>
+                        </button>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Reset" id="EZl-Xc-EDf">
                             <connections>
                                 <action selector="resetPressed" destination="AgC-eL-Hgc" id="FKt-oR-x64"/>
@@ -31,11 +31,11 @@
                         </button>
                     </items>
                     <connections>
-                        <outlet property="counterDisplay" destination="eaF-6y-aJW" id="ygx-5t-TGZ"/>
+                        <outlet property="counterDisplay" destination="tTb-8c-gcR" id="LLG-7C-JSh"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="285.5"/>
+            <point key="canvasLocation" x="220" y="323"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

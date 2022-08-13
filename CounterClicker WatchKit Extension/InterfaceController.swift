@@ -12,10 +12,10 @@ import AVFoundation
 
 class InterfaceController: WKInterfaceController {
     
-    @IBOutlet weak var counterDisplay: WKInterfaceLabel!
- 
+    @IBOutlet weak var counterDisplay: WKInterfaceButton!
+    
     var totalClicks: Int = 0
-    var clickSound = AVAudioPlayer()
+    var player = AVAudioPlayer()
 
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
@@ -50,19 +50,20 @@ class InterfaceController: WKInterfaceController {
     
     func updateUI() {
     
-        self.counterDisplay.setText("\(self.totalClicks)")
+        self.counterDisplay.setTitle("\(self.totalClicks)")
     }
     
     func playSound(soundName : String) {
-        
-        let path = Bundle.main.path(forResource: soundName, ofType: ".mp3")!
-        let url = URL(fileURLWithPath: path)
 
-        do {
-            clickSound = try AVAudioPlayer(contentsOf: url)
-            clickSound.play()
-        } catch {
-                   //couldn't load file
-               }
+                let path = Bundle.main.path(forResource: soundName, ofType: ".mp3")!
+                let url = URL(fileURLWithPath: path)
+
+                do {
+                    player = try AVAudioPlayer(contentsOf: url)
+                    player.play()
+                } catch {
+                           //couldn't load file :(
+    }
     }
 }
+
