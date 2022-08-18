@@ -433,7 +433,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClickerWatchOS3.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClickerWatchOS4.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -464,7 +464,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClickerWatchOS3.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClickerWatchOS4.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -488,7 +488,7 @@
 				IBSC_MODULE = CounterClicker_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClickerWatchOS3.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClickerWatchOS4.watchkitapp";
 				PRODUCT_NAME = "One In One Out";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -512,7 +512,7 @@
 				IBSC_MODULE = CounterClicker_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClickerWatchOS3.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClickerWatchOS4.watchkitapp";
 				PRODUCT_NAME = "One In One Out";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -526,12 +526,14 @@
 		8B3335F62878148D00706906 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LJ45S84HRH;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClickerWatchOS3";
+				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClickerWatchOS4";
 				PRODUCT_NAME = "One In One Out";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -539,12 +541,14 @@
 		8B3335F72878148D00706906 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LJ45S84HRH;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClickerWatchOS3";
+				PRODUCT_BUNDLE_IDENTIFIER = "simon-vincent.CounterClickerWatchOS4";
 				PRODUCT_NAME = "One In One Out";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
