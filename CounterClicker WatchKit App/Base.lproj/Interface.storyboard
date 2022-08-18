@@ -35,7 +35,7 @@
                                 </swipeGestureRecognizer>
                             </gestureRecognizers>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="font" type="system" pointSize="24"/>
+                            <fontDescription key="font" type="system" pointSize="40"/>
                             <connections>
                                 <action selector="tapToPlus" destination="AgC-eL-Hgc" id="Ilt-In-Zv3"/>
                             </connections>

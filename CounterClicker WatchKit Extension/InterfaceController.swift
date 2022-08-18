@@ -33,13 +33,21 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func increasePlusAmount(_ sender: Any) {
-        plusAmount = plusAmount + 1
-        counterDisplay.setTitle("+\(plusAmount)")
+        plusAmount = plusAmount + 1; do {
+            if plusAmount == 0 {
+               plusAmount = 1
+            }
+        }
+        counterDisplay.setTitle("\(plusAmount)")
     }
-    
+
     @IBAction func decreasePlusAmount(_ sender: Any) {
-        plusAmount = plusAmount - 1
-        counterDisplay.setTitle("-\(plusAmount)")
+        plusAmount = plusAmount - 1; do {
+            if plusAmount == 0 {
+                plusAmount = 1
+            }
+        }
+        counterDisplay.setTitle("\(plusAmount)")
     }
     
     @IBAction func tapToPlus() {
